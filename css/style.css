@@ -1534,23 +1534,23 @@ font-family: 'Montserrat', sans-serif;
 
 /* Go To Top */
 .go-to-top {
-    box-sizing: content-box;
     display: block;
     position: fixed;
     right: 20px;
     bottom: 20px;
+    line-height: 30px;
+    border-radius: 35px;
     background-color: #999;
     opacity: 0.5;
-    width: 30px;
+    width: 70px;
     padding: 20px;
     text-align: center;
 }
 .go-to-top::before {
-    box-sizing: content-box;
     content: "";
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 13px;
+    width: 13px;
     border-top: 3px solid #fff;
     border-right: 3px solid #fff;
     transform: translateY(20%) rotate(-45deg);
