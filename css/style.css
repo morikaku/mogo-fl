@@ -377,14 +377,15 @@ font-family: 'Montserrat', sans-serif;
 .main-nav {
     position: absolute;
     top: 32px;
-    left: 50%;
-    width: 600px;
+    left: 40%;
+    /* width: 600px; */
     z-index: 3;
 }
 
 .main-nav ul {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .main-nav ul li a {
