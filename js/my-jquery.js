@@ -44,7 +44,7 @@ $(function () {
 
     // スムーススクロール
     $('a[href^="#"]').click(function () {
-        let speed = 1500;
+        let speed = 500;
         let href = $(this).attr("href");
         let target = $(href == "#" || href == "" ? 'html' : href);
         let position = target.offset().top;
@@ -54,16 +54,19 @@ $(function () {
 
     //アコーディオンをクリックした時の動作
     $('.title').on('click', function () {//タイトル要素をクリックしたら
-        $('.a-box').slideUp(500);//クラス名.a-boxがついたすべてのアコーディオンを閉じる
-        var findElm = $(this).next(".a-box");//タイトル直後のアコーディオンを行うエリアを取得
-        if ($(this).hasClass('open')) {//タイトル要素にクラス名openがあれば
-            $(this).removeClass('open');//クラス名除去
+        if ($(this).hasClass('open')) {//タイトル要素にクラス名openがあれば何もしない
         } else {
-            $('.open').removeClass('open'); //クラス名openを全て除去した後
-            $(this).addClass('open');//クリックしたタイトルにクラス名openを付与し
-            $(findElm).slideDown(500);//アコーディオンを開く
+            $('.a-box').slideUp(500);//クラス名.a-boxがついたすべてのアコーディオンを閉じる
+            var findElm = $(this).next(".a-box");//タイトル直後のアコーディオンを行うエリアを取得
+            if ($(this).hasClass('open')) {//タイトル要素にクラス名openがあれば
+                $(this).removeClass('open');//クラス名除去
+            } else {
+                $('.open').removeClass('open'); //クラス名openを全て除去した後
+                $(this).addClass('open');//クリックしたタイトルにクラス名openを付与し
+                $(findElm).slideDown(500);//アコーディオンを開く
+            }
         }
-    });
+        });
 
     // LEARN MORE をhoverした時の動作
     $(".learn-more").hover(// hoverする要素のclass名
