@@ -1,5 +1,15 @@
 $(function () {
 
+    // Topへ戻るボタン表示切替
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('#go-to-top').fadeIn();
+        } else {
+            $('#go-to-top').fadeOut();
+        }
+    });
+
+
     // ハンバーガーメニュー
     $('#drawer-icon, #drawer-close').on('click', function () {
         $('#drawer-icon').toggleClass('open');

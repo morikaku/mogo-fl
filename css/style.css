@@ -1535,8 +1535,9 @@ font-family: 'Montserrat', sans-serif;
 }
 
 /* Go To Top */
-.go-to-top {
-    display: block;
+#go-to-top {
+    /* display: block; */
+    display: none;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -1547,8 +1548,9 @@ font-family: 'Montserrat', sans-serif;
     width: 70px;
     padding: 20px;
     text-align: center;
+    z-index: 2;
 }
-.go-to-top::before {
+#go-to-top::before {
     content: "";
     display: inline-block;
     height: 13px;
