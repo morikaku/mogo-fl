@@ -483,21 +483,21 @@ font-family: 'Montserrat', sans-serif;
 }
 
 /* hover時 */
-.three-images li a:hover {
+.three-images li:hover a {
     position: absolute;
     top: -10px;
     left: -10px;
     transition: all .3s ease-in-out;
 }
 
-.three-images li a:hover::after {
+.three-images li:hover a::after {
     opacity: .8;
     z-index: 0;
     /* for under text */
     transition: all .3s ease-in-out;
 }
 
-.three-images li a:hover .hover-text {
+.three-images li:hover a .hover-text {
     opacity: 1;
     z-index: 1;
     /* for above gradation */
