@@ -29,11 +29,12 @@ img {
 
 .contents-line {
     width: auto;
-    max-width: 1980px;
+    /* max-width: 1980px; */
     /* max-width: none; */
     min-width: 1200px;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-size: cover;
     position: relative;
 }
 
@@ -91,14 +92,20 @@ font-family: 'Montserrat', sans-serif;
 */
 
 .container {
-    max-width: 1920px;
+    max-width: auto;
     min-width: 1200px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
 
+/* header-line */
+.header-line {
+    background-color: #ccc;
+}
 /* header-contents */
 .header-wrap {
+    max-width: 1920px;
+    margin: 0 auto;
     height: 1000px;
     position: relative;
 }
@@ -263,6 +270,10 @@ font-family: 'Montserrat', sans-serif;
 .mogo-logo a:hover {
     transform: scale(1.05);
     transition: .3s;
+}
+
+.flag-area {
+    font-size: 15px;
 }
 
 .sub-title {
@@ -589,6 +600,7 @@ font-family: 'Montserrat', sans-serif;
 /* Unique design */
 .unique-design-line {
     background-image: url(../img/bg_adobestock_384249773_72.jpg);
+    background-color: #ccc;
 }
 
 .unique-design-box {
@@ -707,7 +719,7 @@ font-family: 'Montserrat', sans-serif;
 
 /* jd-line */
 .gray-line {
-    max-width: 1920px;
+    /* max-width: 1920px; */
     min-width: 1200px;
     margin: 0 auto;
     padding-bottom: 90px;
@@ -948,7 +960,8 @@ font-family: 'Montserrat', sans-serif;
 
 /* some of our work */
 .seven-img-line {
-    max-width: 1920px;
+    /* max-width: 1920px; */
+    max-width: none;
     min-width: 1200px;
 }
 
@@ -1299,7 +1312,7 @@ font-family: 'Montserrat', sans-serif;
 
 /* Open map */
 .map-line {
-    max-width: 1920px;
+    /* max-width: 1920px; */
     min-width: 1200px;
     height: 200px;
     background-image: url(../img/bg_map.jpg);
@@ -1714,6 +1727,12 @@ font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         top: 4%;
         left: 4%;
+    }
+
+
+    .flag-area {
+        font-size: 10px;
+        transform: scale(0.6);
     }
 
     .sub-title {
