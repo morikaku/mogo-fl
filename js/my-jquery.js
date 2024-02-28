@@ -1,5 +1,24 @@
 $(function () {
 
+    // Lang Change
+    $('#flg-jp').on('click', function () {
+        if ($('#flg-gb').hasClass('active-flg')) {
+            $('#flg-jp').addClass(('active-flg'));
+            $('#flg-gb').removeClass('active-flg');
+            $('.lang-jp').addClass('active-lang');
+            $('.lang-gb').removeClass('active-lang');
+        }
+    })
+
+    $('#flg-gb').on('click', function () {
+        if ($('#flg-jp').hasClass('active-flg')) {
+            $('#flg-gb').addClass(('active-flg'));
+            $('#flg-jp').removeClass('active-flg');
+            $('.lang-gb').addClass('active-lang');
+            $('.lang-jp').removeClass('active-lang');
+        }
+    });
+
     // Topへ戻るボタン表示切替
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -76,7 +95,7 @@ $(function () {
                 $(findElm).slideDown(500);//アコーディオンを開く
             }
         }
-        });
+    });
 
     // LEARN MORE をhoverした時の動作
     $(".learn-more").hover(// hoverする要素のclass名
