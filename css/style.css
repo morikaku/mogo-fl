@@ -86,6 +86,39 @@ img {
 
 /* MoGo 共通class ここまで */
 
+/* Change Language from here */
+#flg-jp,
+#flg-gb {
+    opacity: 0.6;
+}
+
+#flg-jp.active-flg,
+#flg-gb.active-flg {
+    opacity: 1;
+}
+
+#flg-gb:hover,
+#flg-jp:hover {
+    cursor: pointer;
+}
+
+#flg-gb:hover.active-flg,
+#flg-jp:hover.active-flg {
+    cursor: auto;
+}
+
+.lang-jp,
+.lang-gb {
+    display: none;
+}
+
+.lang-jp.active-lang,
+.lang-gb.active-lang {
+    display: inline;
+}
+
+/* Change Language to here
+
 /* Google Fonts
 font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
@@ -1725,8 +1758,8 @@ font-family: 'Montserrat', sans-serif;
     /* header-contents Start */
     .mogo-logo {
         font-size: 15px;
-        top: 4%;
-        left: 4%;
+        top: 10px;
+        left: 10px;
     }
 
 
@@ -1790,8 +1823,8 @@ font-family: 'Montserrat', sans-serif;
     #drawer-icon {
         display: block;
         position: absolute;
-        top: 3%;
-        right: 3%;
+        top: 10px;
+        right: 10px;
         height: 40px;
         width: 40px;
         background-color: transparent;
