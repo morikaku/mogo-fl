@@ -83,8 +83,8 @@ $(function () {
 
     //アコーディオンをクリックした時の動作
     $('.title').on('click', function () {//タイトル要素をクリックしたら
-        if ($(this).hasClass('open')) {//タイトル要素にクラス名openがあれば何もしない
-        } else {
+        if (!$(this).hasClass('open')
+            || window.matchMedia('(max-width:640px)').matches) {//タイトル要素にクラス名openがない、またはスマホモードの時
             $('.a-box').slideUp(500);//クラス名.a-boxがついたすべてのアコーディオンを閉じる
             var findElm = $(this).next(".a-box");//タイトル直後のアコーディオンを行うエリアを取得
             if ($(this).hasClass('open')) {//タイトル要素にクラス名openがあれば
