@@ -88,11 +88,16 @@
         <div id="drawer-content">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#service"><span class="lang-gb active-lang">service</span><span class="lang-jp">サービス</span></a></li>
-                    <li><a href="#framework"><span class="lang-gb active-lang">framework</span><span class="lang-jp">フレームワーク</span></a></li>
-                    <li><a href="#about-us"><span class="lang-gb active-lang">about us</span><span class="lang-jp">我々とは</span></a></li>
-                    <li><a href="#work"><span class="lang-gb active-lang">work</span><span class="lang-jp">ワーク</span></a></li>
-                    <li><a href="#blog"><span class="lang-gb active-lang">blog</span><span class="lang-jp">ブログ</span></a></li>
+                    <li><a href="#service"><span class="lang-gb active-lang">service</span><span
+                                class="lang-jp">サービス</span></a></li>
+                    <li><a href="#framework"><span class="lang-gb active-lang">framework</span><span
+                                class="lang-jp">フレームワーク</span></a></li>
+                    <li><a href="#about-us"><span class="lang-gb active-lang">about us</span><span
+                                class="lang-jp">我々とは</span></a></li>
+                    <li><a href="#work"><span class="lang-gb active-lang">work</span><span
+                                class="lang-jp">ワーク</span></a></li>
+                    <li><a href="#blog"><span class="lang-gb active-lang">blog</span><span
+                                class="lang-jp">ブログ</span></a></li>
                     <li><a href="#"><img src="img/icon-01-shopping-cart.png" alt="shopping-cart"></a></li>
                     <li><a href="#"><img src="img/icon-02-magnifying-glass-re.png" alt="magnifying-glass"></a></li>
                 </ul>
@@ -213,9 +218,24 @@
         <!-- what we do -->
         <section class="contents-box" id="framework">
             <h2 class="contents-title"><span class="contents-sub-title">what we do</span>JavaScript framework</h2>
-            <p class="contents-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="contents-text">
+                <span class="lang-gb active-lang"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </span><!-- /.lang-gb active-lang -->
+                <span class="lang-jp">
+                    下のアコーディング・パネルは、jQueryで実装しています。
+                    演習課題としては、要求させていませんでしたが、自発的に取り組みました。
+                    擬似要素::webkit-scrollbarは、非推奨とさせていますが、Windowsでの見映えを優先し、敢えて使いました。
+                    PC版では、高さ 380px を維持するために、開いているアコーディオンはクリックしても閉じません。
+                    閉じているアコーディオンをクリックした時のみ、それぞれのアコーディオンが動きます。
+                    スマホ版では、高さを制限する必要がありませんので、閉じていれば開く、開いていれば閉じるように動きを変えています。
+                    縦スクロールの中に更にスクロールがあることは、ユーザビリティを考えると非常に使いにくいものとなりますので、
+                    長い文章でもスクロールバーは、表示させず全文表示するようにコントロールしています。
+                </span><!-- /.lang-jp -->
+            </p>
             <div class="contents-wrapper">
                 <div class="photo-box"><img src="img/mogo-09.png" alt="photo"></div><!-- /.photo-box -->
                 <ul class="accordion-area">
