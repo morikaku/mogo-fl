@@ -36,6 +36,12 @@ $(function () {
         $('#drawer-close').toggleClass('show');
     })
 
+    $('.main-nav a').click(function () {//ナビゲーションのリンクがクリックされたら
+        $('#drawer-icon').removeClass('open');
+        $('#drawer-content').removeClass('active');
+        $('#drawer-close').removeClass('show');
+    });
+
     // Slick
     $('.header-slider').slick({
         arrows: true,
