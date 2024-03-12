@@ -89,7 +89,7 @@ img {
 /* Change Language from here */
 #flg-jp,
 #flg-gb {
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 #flg-jp.active-flg,
@@ -122,6 +122,18 @@ img {
 /* Google Fonts
 font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
+.yuji-mai-regular {
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.yuji-boku-regular {
+  font-family: "Yuji Boku", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+.wf-hannari { font-family: "Hannari"; }
 */
 
 .container {
@@ -135,6 +147,7 @@ font-family: 'Montserrat', sans-serif;
 .header-line {
     background-color: #ccc;
 }
+
 /* header-contents */
 .header-wrap {
     max-width: 1920px;
@@ -167,20 +180,18 @@ font-family: 'Montserrat', sans-serif;
 /* arrow */
 .header-slider .slick-next,
 .header-slider .slick-prev {
-    width: 21px;/* added */
-    height: 34px;/* added */
-    overflow: hidden;/* added */
-
+    width: 21px;
+    height: 34px;
+    overflow: hidden;
     z-index: 3;
-    /* opacity: 0; */
 }
 
 .header-slider .slick-prev {
-    left: 10px;/* changed */
+    left: 20px;
 }
 
 .header-slider .slick-next {
-    right: 10px;/* changed */
+    right: 20px;
 }
 
 .header-slider .slick-next::before,
@@ -209,8 +220,7 @@ font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     bottom: 0;
-    z-index: 3;
-    /* for above .header-contents */
+    z-index: 3;    /* for above .header-contents */
 }
 
 .header-slider .slick-dots li {
@@ -313,10 +323,6 @@ font-family: 'Montserrat', sans-serif;
     display: block;
     margin-bottom: 40px;
     font-family: 'Kaushan Script', cursive;
-    /* position: absolute; */
-    /* top: -90px; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     letter-spacing: -.02em;
     font-size: 72px;
     color: #fff;
@@ -324,9 +330,18 @@ font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
 }
 
+.main-title .sub-title .lang-jp {
+    font-family: "Hannari";
+    /* font-family: "Yuji mai", serif; */
+    font-size: 70px;
+}
+
+
 .main-title {
+    display: inline-block;
     font-weight: 700;
     position: absolute;
+    width: 1200px;
     top: 230px;
     left: 50%;
     transform: translateX(-50%);
@@ -335,6 +350,12 @@ font-family: 'Montserrat', sans-serif;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+}
+
+.main-title .lang-jp {
+    font-family: "Yuji boku", serif;
+    font-size: 120px;
+    font-style: italic;
 }
 
 .header-contents::after {
@@ -935,7 +956,7 @@ font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: all .3s ease-in-out;
 }
@@ -1461,9 +1482,11 @@ font-family: 'Montserrat', sans-serif;
 
 .i-email {
     width: 220px;
-    font-size: 16px;                /* Task */
+    font-size: 16px;
+    /* Task */
     line-height: 1;
-    padding: 13px;                  /* Task */
+    padding: 13px;
+    /* Task */
     border: 1px solid #ccc;
 }
 
@@ -1596,6 +1619,7 @@ font-family: 'Montserrat', sans-serif;
     text-align: center;
     z-index: 2;
 }
+
 #go-to-top::before {
     content: "";
     display: inline-block;
@@ -1765,18 +1789,26 @@ font-family: 'Montserrat', sans-serif;
 
     .flag-area {
         font-size: 16px;
-        /* transform: scale(0.6); */
     }
 
     .sub-title {
-        font-size: 30px;
-        /* top: -40%; */
+        font-size: 35px;
         margin-bottom: 15px;
     }
 
+    .main-title .sub-title .lang-jp {
+        font-size: 28px;
+    }
+
     .main-title {
+        width: 90%;
+        display: block;
         font-size: 45px;
         top: 20%;
+    }
+
+    .main-title .lang-jp {
+        font-size: 40px;
     }
 
     .header-contents::after {
