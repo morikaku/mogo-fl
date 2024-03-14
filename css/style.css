@@ -116,23 +116,16 @@ img {
 .lang-gb.active-lang {
     display: inline;
 }
-
 /* Change Language to here
 
 /* Google Fonts
 font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
-.yuji-mai-regular {
-  font-family: "Yuji Mai", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 .yuji-boku-regular {
-  font-family: "Yuji Boku", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Yuji Boku", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
 .wf-hannari { font-family: "Hannari"; }
 */
 
@@ -817,19 +810,19 @@ font-family: 'Montserrat', sans-serif;
 
 /*
 .jd-article-wrap::before {
-        display: block;
+    display: block;
 }
 
 .jd-slider li:nth-child(1) .jd-article-wrap::before {
-        content: url(../img/icon-13-jon.png);
+    content: url(../img/icon-13-jon.png);
 }
 
 .jd-slider li:nth-child(2) .jd-article-wrap::before {
-        content: url(../img/icon-14-comment.png);
+    content: url(../img/icon-14-comment.png);
 }
 
 .jd-slider li:nth-child(3) .jd-article-wrap::before {
-        content: url(../img/icon-15-comments.png);
+    content: url(../img/icon-15-comments.png);
 }
 */
 
